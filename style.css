@@ -1,0 +1,135 @@
+*{
+    transition: all 0.2s ease 0s;
+
+    padding: 0;
+    margin: 0;
+
+    color: white;
+    text-align: justify;
+    font-family: "Comfortaa";
+}
+
+@font-face {
+	font-family: 'Comfortaa';
+	src: url('fonts/Comfortaa-Regular.woff');
+}
+
+body{
+    background-color: black;
+}
+
+.topPanel{
+    height: 80px;
+    background-color: #1e1e1e;
+    
+}
+.navPanel{
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: #666666; */
+}
+
+.navPanel ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navPanel li {
+    display: inline-block;
+}
+
+.navPanel li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 18px;
+    text-decoration: none;
+}
+
+/* li a:hover:not(.button) {
+    color: #ff77f4;
+} */
+
+.navPanel li :hover{
+    transform: translate(0px, 4px);
+}
+
+.button {
+    margin-left: 800px;
+    background-color: #42aaff;
+    border-radius: 16px;
+}
+
+.rightElement{
+    float: right;
+}
+
+.button:hover{
+    background-color: #7dc5ff;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 30%;
+}
+
+.mainBlock{
+    backdrop-filter: blur(15px);
+    background: rgba(255, 195, 247, 0.144);
+    box-shadow: 0px 0px 36px 6px rgba(0, 0, 0, 0.7);
+
+    width: 45%;
+    /* height: 100%; */
+    margin: 20px;
+    padding: 20px;
+
+    /* position: absolute;
+    top: 30%; */
+
+    border-radius: 32px;
+}
+
+.content{
+    margin: 20px;
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mid img{
+    color: white;
+}
+
+.fullscreen-bg {
+    overflow: hidden;
+    z-index: -100;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+ 
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
