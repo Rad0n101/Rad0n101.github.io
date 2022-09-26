@@ -4,9 +4,11 @@
     padding: 0;
     margin: 0;
 
-    color: white;
+    color: 1e1e1e;
     text-align: justify;
     font-family: "Comfortaa";
+
+    list-style-type: none;
 }
 
 @font-face {
@@ -15,7 +17,7 @@
 }
 
 body{
-    background-color: black;
+    background-color: #363636;
 }
 
 .topPanel{
@@ -57,13 +59,14 @@ body{
     color: #ff77f4;
 } */
 
-.navPanel li :hover{
+.navPanel li :hover:not(.button){
     transform: translate(0px, 4px);
+    color: #ffa9a9;
 }
 
 .button {
-    margin-left: 800px;
-    background-color: #42aaff;
+    margin-left: 600px;
+    background-color: #cc2828;
     border-radius: 16px;
 }
 
@@ -72,7 +75,8 @@ body{
 }
 
 .button:hover{
-    background-color: #7dc5ff;
+    transform: translate(0px, 4px);
+    background-color: #ee4a4a;
 }
 
 .main{
@@ -82,15 +86,17 @@ body{
     align-items: center;
 
     position: absolute;
-    top: 30%;
+    /* top: 30%; */
 }
 
 .mainBlock{
     backdrop-filter: blur(15px);
-    background: rgba(255, 195, 247, 0.144);
-    box-shadow: 0px 0px 36px 6px rgba(0, 0, 0, 0.7);
+    background: #1e1e1e;
+    color: white;
 
-    width: 45%;
+    box-shadow: 0px 0px 36px 6px rgba(255, 255, 255, 0.068);
+
+    width: 56%;
     /* height: 100%; */
     margin: 20px;
     padding: 20px;
@@ -114,10 +120,24 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    margin-top: 25px;
 }
-.mid img{
-    color: white;
+.mid tr{
+    margin-top: 10px;
 }
+.mid td{
+    padding-left: 10px;
+}
+
+
+.info{
+    margin: 0 auto;
+    font-size: 22px;
+    text-align: center;
+    text-decoration: none;
+}
+
 
 .fullscreen-bg {
     overflow: hidden;
