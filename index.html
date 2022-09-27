@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="media/img/icons/icon.png" type="image/x-icon">
     <script src="script.js"></script>
-    <title>Document</title>
+    <title>Принт Бюро - Контакты</title>
 </head>
 <body>
     <div class="theTopMostPanel">
@@ -15,12 +16,17 @@
 
     <div class="topPanel">
         <div class="navPanel">
-            <ul>
-                <li><a href="">Главная</a></li>
-                <li><a href="">Товары</a></li>
-                <li><a href="">Контакты</a></li>
-            </ul>
-            <div class="rightElement">
+            <div class="navLeft">
+                <ul>
+                    <li><a href="">Главная</a></li>
+                    <li><a href="">Товары</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="navMid">
+                <img src="media/img/logo.png" alt="" width="400px">
+            </div>
+            <div class="navRight">
                 <ul>
                     <li><a class="button" href="" onclick="onButtonClick();">Регистрация</a></li>
                 </ul>
@@ -31,14 +37,14 @@
     <div class="main">
         <div class="mainBlock">
             <div class="content">
-                <div class="top">
+                <div class="topContent">
                     <h1>Контакты</h1>
                 </div>
-                <div class="mid">
+                <div class="midContent">
                     <table class="info">
                         <tr>
                             <td>
-                                <img src="media/img/icons/vk-icon.svg" alt="" width="32">
+                                <img src="media/img/icons/phone-icon.svg" alt="" width="32">
                             </td>
                             <td>
                                 <p>+7 920 267 42 64</p>
@@ -58,16 +64,30 @@
                         
                         <tr>
                             <td>
-                                <img src="media/img/icons/vk-icon.svg" alt="" width="32">
+                                <img src="media/img/icons/mail-icon.svg" alt="" width="32">
                             </td>
                             <td>
                                 printbyro@yandex.ru
                             </td>
                         </tr>
-             
-                        </table>
+                    </table>
+                    
+                </div>
+                <div class="botContent">
+                    <iframe class="map" 
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3Abb12b9aa119ceac1f491771401e54794411daf1f495d72b2f08571b8e57aae8d&amp;source=constructor" 
+                    width="512" height="512" frameborder="0"></iframe>
                 </div>
             </div>
+            
+        </div>
+        
+    </div>
+
+    <div class="footer">
+        <div class="footerContent">
+            <p>Принт Бюро<br>
+            2022</p>
         </div>
     </div>
     <!-- <div class="fullscreen-bg">

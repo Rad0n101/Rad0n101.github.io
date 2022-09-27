@@ -4,7 +4,6 @@
     padding: 0;
     margin: 0;
 
-    color: 1e1e1e;
     text-align: justify;
     font-family: "Comfortaa";
 
@@ -23,7 +22,7 @@ body{
 .topPanel{
     height: 80px;
     background-color: #1e1e1e;
-    
+    box-shadow: 0px 0px 20px 6px #1e1e1ea6;
 }
 .navPanel{
     margin-left: auto;
@@ -59,13 +58,22 @@ body{
     color: #ff77f4;
 } */
 
-.navPanel li :hover:not(.button){
+.navPanel li :hover{
     transform: translate(0px, 4px);
-    color: #ffa9a9;
+}
+
+.navMid{
+    margin-left: 10%;
+    margin-right: 21%;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .button {
-    margin-left: 600px;
+    /* margin-left: 600px; */
     background-color: #cc2828;
     border-radius: 16px;
 }
@@ -75,17 +83,21 @@ body{
 }
 
 .button:hover{
-    transform: translate(0px, 4px);
+    /* transform: translate(0px, 4px); */
     background-color: #ee4a4a;
 }
 
 .main{
     width: 100%;
+    /* height: 83%; */
+
+    height: 84vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
 
-    position: absolute;
+    /* position: absolute; */
     /* top: 30%; */
 }
 
@@ -96,13 +108,14 @@ body{
 
     box-shadow: 0px 0px 36px 6px rgba(255, 255, 255, 0.068);
 
-    width: 56%;
-    /* height: 100%; */
-    margin: 20px;
-    padding: 20px;
+    /* width: 56%; */
 
-    /* position: absolute;
-    top: 30%; */
+    /* margin-top: 20px; */
+    /* height: 80%; */
+    /* padding: 20px; */
+
+    /* position: absolute; */
+    /* top: 30%; */
 
     border-radius: 32px;
 }
@@ -111,23 +124,31 @@ body{
     margin: 20px;
 }
 
-.top{
+.topContent{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.mid{
+.midContent{
     display: flex;
     justify-content: center;
     align-items: center;
 
     margin-top: 25px;
+    margin-bottom: 25px;
 }
-.mid tr{
-    margin-top: 10px;
+.botContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.map{
+    border-radius: 24px;
+}
+
 .mid td{
     padding-left: 10px;
+    padding-bottom: 10px;
 }
 
 
@@ -138,6 +159,32 @@ body{
     text-decoration: none;
 }
 
+.footer{
+    width: 100%;
+    height: 80px;
+
+    background: #1e1e1e;
+
+    margin-top: auto;
+
+    color: rgba(255, 255, 255, 0.720);
+}
+
+.footerContent{
+    /* background-color: #700000; */
+    height: 100%;
+
+    margin: auto;
+
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+.footerContent p{
+    text-align: center;
+    font-size: 12px;
+}
 
 .fullscreen-bg {
     overflow: hidden;
