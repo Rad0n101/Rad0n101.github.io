@@ -13,8 +13,8 @@
 }
 
 #пожалуйста-не-бейте-я-сам-знаю-что-так-делать-не-надо-но{
-    margin-top: 12%;
-    margin-bottom: 14%;
+    margin-top: 11%;
+    margin-bottom: 13%;
 }
 
 label{
@@ -53,8 +53,8 @@ button:hover{
     transform: translate(0px, 4px);
 }
 
-.костыль{
-    margin-top: -10px;
+#костыль{
+    margin-bottom: 10px;
 }
 .terms input{
     height: 1em;
@@ -74,4 +74,18 @@ button:hover{
 .member{
     font-size: 0.8rem;
     color: #ffffff8a;
+}
+.recover{
+    width: 100%;
+    text-align: right;
+    font-size: 0.8rem;
+    margin-right: 7px;
+}
+.recover a{
+    color: #ee4a4a;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #ffffff;
 }
