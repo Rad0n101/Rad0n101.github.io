@@ -5,21 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="authPage.css">
     <link rel="shortcut icon" href="media/img/icons/icon.png" type="image/x-icon">
     <script src="script.js"></script>
-    <title>Принт Бюро - Товары</title>
+    <title>Принт Бюро - Вход</title>
 </head>
 <body>
     <div class="theTopMostPanel">
         
     </div>
-
     <div class="topPanel">
         <div class="navPanel">
             <div class="navLeft">
                 <ul>
                     <li><a href="main.html">Главная</a></li>
-                    <li><a href="index.html">► Товары ◄</a></li>
+                    <li><a href="index.html">Товары</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
                 </ul>
             </div>
@@ -38,19 +38,26 @@
     </div>
 
     <div class="main">
-        <div class="mainBlock">
+        <div class="regBlock" id="пожалуйста-не-бейте-я-сам-знаю-что-так-делать-не-надо-но">
             <div class="content">
                 <div class="topContent">
-                    <h1>Товары</h1>
+                    <h1>Вход</h1>
                 </div>
                 <div class="midContent">
-                    
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim doloribus libero quos quis labore, eum vel nam maxime aspernatur natus ratione, doloremque laborum. Vel, deserunt esse tempore temporibus voluptas accusamus.</p>
+                    <form action="#">
+                        <input type="text" placeholder="Имя или почта">
+                        <!-- <input type="text" placeholder="Фамилия"> -->
+                        <input type="password" placeholder="Пароль">
+                    </form>
                 </div>
-                <div class="botContent">               
+                <div class="botContent">
+                    <button class="костыль">Войти</button>
+                    <div class="member">
+                        Не зарегистрированы? <a href="registration.html">Регистрация</a>
+                    </div>
                 </div>
-            </div>       
-        </div>       
+            </div>
+        </div>
     </div>
 
     <div class="footer">

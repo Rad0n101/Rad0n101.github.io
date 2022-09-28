@@ -11,7 +11,7 @@ function onButtonClick(){
             alert("Lorem ipsum dolor sit amet");
             break;
         case 2:
-            alert("https://dropmefiles.com/5CzuC");
+            alert("Тут была ссылка на рикрол");
             break;
         case 3:
             alert("hello world?");
