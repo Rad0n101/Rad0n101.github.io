@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="switch.css">
+    <script src="js/script.js"></script>
+    <script src="js/darkMode.js"></script>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="bg-div"></div>
+    <div class="content">
+        <div class="main-block">
+            <div class="control-panel">
+                <p id="p1">Скрыть / Показать фон</p>
+                <label class="switch">
+                    <input type="checkbox" id="bg-switch" onchange="hideBg()" checked>
+                    <span class="slider round" id="s1"></span>
+                </label>
+                <div class="bg-buttons">
+                    <button id="b1" onclick="bg1()">Фон 1</button>
+                    <button id="b2" onclick="bg2()">Фон 2</button>
+                    <button id="b3" onclick="bg3()">Фон 3</button>
+                    <button id="b4" onclick="bg4()">Фон 4</button>
+                    <button id="b5" onclick="bg5()">Фон 5</button>
+                </div>
+                <br>
+                <p id="p2">Скрыть / Показать логотип</p>
+                <label class="switch">
+                    <input type="checkbox" id="logo-switch" onchange="hideLogo()" checked>
+                    <span class="slider round" id="s2"></span>
+                </label>
+                <div class="logo-buttons">
+                    <button id="b6" onclick="masterClick()">Mastercard</button>
+                    <button id="b7" onclick="visaClick()">Visa</button>
+                    <button id="b8" onclick="mirClick()">МИР</button>
+                </div>
+                <br>
+                <p id="p3">Скрыть / Показать чип</p>
+                <label class="switch">
+                    <input type="checkbox" id="chip-switch" onchange="changeChip()" checked>
+                    <span class="slider round" id="s3"></span>
+                </label>
+                <p id="p4">Dark mode</p>
+                <label class="switch">
+                    <input type="checkbox" id="dark-mode-switch" onchange="darkMode()">
+                    <span class="slider round" id="s4"></span>
+                </label>
+                <!-- <input type="file"> -->
+                <br>
+                <div class="end">
+                    <p id="p5" style="display: flex;justify-content: center;">▼ Выбор цвета ▼</p>
+                    <input type="color" class="color-picker" value="#272727" onchange="onColorPickerChange()">
+                    <br><br>
+                    <button id="b9" class="reset-button" onclick="reset()">Сброс</button>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="black-line"></div>
+                    <div class="card-info">
+                        <input type="text" name="" id="card-number" class="number" placeholder="0123 4567 8901 2345" maxlength="16">
+                        <script>
+                            //Код jQuery, установливающий маску для ввода телефона элементу input
+                            //1. После загрузки страницы,  когда все элементы будут доступны выполнить...
+                            $(function(){
+                              //2. Получить элемент, к которому необходимо добавить маску
+                              $("#card-number").mask("9999 9999 9999 9999");
+                            });
+                        </script>
+
+                        <div class="text">
+                            <p>Срок</p>
+                            <p class="костыль">Код</p>
+                        </div>
+            
+                        <div class="date-input">
+                            <input type="text" class="month" id="month-text" placeholder="MM" maxlength="2">
+                            <p>/</p>
+                            <input type="text" class="date" id="date-text" placeholder="DD" maxlength="2">
+                            <input type="text" class="cvv" placeholder="CVV" maxlength="3">
+                        </div>
+            
+                        <div class="name-input">
+                            <input type="text" class="name" placeholder="FIRST NAME" onchange="onTextChange()">
+                            <input type="text" class="surname" placeholder="LAST NAME" onchange="onTextChange()">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-front">
+                    <div class="front-content">
+                        <img src="media/img/nfc-logo.svg" width="20">
+                        <div class="chip">
+                            <img src="media/img/chip.svg" width="50">
+                        </div>
+                    </div>
+                    <div class="front-text">
+                        <p class="front-name">FIRST NAME</p>
+                        <p class="front-last">LAST NAME</p> 
+                    </div>
+                    <img id="card-logo"src="media/img/mastercard-logo.svg" width="100" class="logo">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
