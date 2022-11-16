@@ -10,7 +10,7 @@ function darkMode(){
     let chipSlider = document.getElementById('s3');
     let darkModeSlider = document.getElementById('s4');
 
-    let bgDiv = document.querySelector(".bg-div");
+    let bgDiv = document.body;
 
     let controlPanel = document.querySelector(".control-panel");
 
