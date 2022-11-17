@@ -42,8 +42,8 @@
     padding: 26px;
     box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.2);
     border-radius: 24px;
-    max-width: 420px;
-    min-width: 420px;
+    max-width: 250px;
+    min-width: 250px;
 }
 .comment-field{
     display: flex;
@@ -79,8 +79,8 @@ input:focus{
     outline: 1px solid rgb(66, 142, 255);
 }
 .name{
-    width: 400px;
+    width: 250px;
 }
 .comment-body{
-    width: 400px;
+    width: 250px;
 }
