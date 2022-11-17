@@ -19,15 +19,17 @@
 }
 .content{
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .enter-comment{
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-flow: column nowrap;
     align-items: flex-start;
     width: fit-content;
     padding: 26px;
-    box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.2);
+    /* box-shadow: rgb(0 0 0 / 20%) 4px 4px 16px 0px; */
     border-radius: 24px;
 }
 .comment-block{
@@ -40,8 +42,12 @@
     padding: 26px;
     box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.2);
     border-radius: 24px;
-    max-width: 800px;
-    min-width: 800px;
+    max-width: 420px;
+    min-width: 420px;
+}
+.comment-field{
+    display: flex;
+    flex-direction: column-reverse;
 }
 .date em{
     color: #808080;
