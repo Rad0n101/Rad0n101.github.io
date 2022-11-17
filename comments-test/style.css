@@ -1,0 +1,80 @@
+*{
+    transition: all 0.2s ease 0s;
+    margin: 0;
+    color: #000000;
+    font-family: "Nunito";
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url(fonts/Nunito-Regular.ttf);
+
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Nunito';
+    src: url(fonts/Nunito-Bold.ttf);
+
+    font-weight: bold;
+}
+.content{
+    padding: 15px;
+}
+.enter-comment{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    width: fit-content;
+    padding: 26px;
+    box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 24px;
+}
+.comment-block{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    width: fit-content;
+    padding: 26px;
+    box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 24px;
+    max-width: 800px;
+    min-width: 800px;
+}
+.date em{
+    color: #808080;
+}
+.username{
+    font-size: 18px;
+    font-weight: bold;
+}
+button{
+    cursor: pointer;
+    padding: 8px;
+    width: 100px;
+    border: none;
+    border-radius: 12px;
+    background-color: rgb(66, 142, 255);
+    color: #fff;
+}
+button:hover{
+    background-color: rgb(94, 158, 255);
+}
+input{
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.089) inset;
+}
+input:focus{
+    outline: 1px solid rgb(66, 142, 255);
+}
+.name{
+    width: 400px;
+}
+.comment-body{
+    width: 400px;
+}
