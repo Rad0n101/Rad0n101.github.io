@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="switch.css">
     <script src="js/script.js"></script>
     <script src="js/darkMode.js"></script>
+    <script src="js/loadBg.js"></script>
 
     <script src="js/jquery.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
@@ -29,6 +30,9 @@
                     <button id="b3" onclick="bg3()">Фон 3</button>
                     <button id="b4" onclick="bg4()">Фон 4</button>
                     <button id="b5" onclick="bg5()">Фон 5</button>
+
+                    <input type="file" id="imgInp" accept="image/*">
+                    <button id="b10" class="load-bg" onclick="loadBg()">Загрузить</button>
                 </div>
                 <br>
                 <p id="p2">Скрыть / Показать логотип</p>

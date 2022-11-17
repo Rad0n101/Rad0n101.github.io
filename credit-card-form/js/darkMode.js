@@ -20,6 +20,8 @@ function darkMode(){
     let controlPanelP4 = document.getElementById("p4");
     let controlPanelP5 = document.getElementById("p5");
 
+    let fileInput = document.getElementById("imgInp");
+
     let btn1 = document.getElementById("b1");
     let btn2 = document.getElementById("b2");
     let btn3 = document.getElementById("b3");
@@ -29,6 +31,7 @@ function darkMode(){
     let btn7 = document.getElementById("b7");
     let btn8 = document.getElementById("b8");
     let btn9 = document.getElementById("b9");
+    let btn10 = document.getElementById("b10");
 
     let card1 = document.querySelector(".card");
     let card2 = document.querySelector(".card-front");
@@ -37,6 +40,9 @@ function darkMode(){
 
     if (darkModeSwitch.checked) {
         bgDiv.style.backgroundColor = "#1e1e1e";
+
+        fileInput.style.backgroundColor = "#303030";
+        fileInput.style.color = "#999999";
 
         if(bgSwitch.checked){
             bgSlider.style.backgroundColor = "#008d1c";
@@ -149,6 +155,7 @@ function darkMode(){
         btn7.style.backgroundColor = "#2c2c2c";
         btn8.style.backgroundColor = "#2c2c2c";
         btn9.style.backgroundColor = "#2c2c2c";
+        btn10.style.backgroundColor = "#2c2c2c";
 
         card1.style.boxShadow = "-10px -10px 25px 2px rgb(0 0 0 / 21%) inset, 16px 16px 20px 0px rgb(0 0 0 / 40%)";
         card2.style.boxShadow = "-10px -10px 25px 2px rgb(0 0 0 / 21%) inset, 16px 16px 20px 0px rgb(0 0 0 / 40%)";
@@ -215,6 +222,12 @@ function darkMode(){
         btn9.onmouseleave = function(){
             btn9.style.backgroundColor = "#2c2c2c";
         }
+        btn10.onmouseover = function(){
+            btn10.style.backgroundColor = "rgb(62 62 62)";
+        }
+        btn10.onmouseleave = function(){
+            btn10.style.backgroundColor = "#2c2c2c";
+        }
 
         btn1.style.color = "#999999";
         btn2.style.color = "#999999";
@@ -225,9 +238,13 @@ function darkMode(){
         btn7.style.color = "#999999";
         btn8.style.color = "#999999";
         btn9.style.color = "red";
+        btn10.style.color = "#999999";
     }
     else {
         bgDiv.style.backgroundColor = "#f7f8fc";
+
+        fileInput.style.backgroundColor = "#f5f5f5";
+        fileInput.style.color = "black";
 
         colorPicker.style.backgroundColor = "#fff";
 
@@ -340,6 +357,7 @@ function darkMode(){
         btn7.style.backgroundColor = "white";
         btn8.style.backgroundColor = "white";
         btn9.style.backgroundColor = "white";
+        btn10.style.backgroundColor = "white";
 
         card1.style.boxShadow = "-10px -10px 25px 2px rgb(255 255 255 / 13%) inset, 16px 16px 20px 0px rgb(18 31 41 / 51%)";
         card2.style.boxShadow = "-10px -10px 25px 2px rgb(255 255 255 / 13%) inset, 16px 16px 20px 0px rgb(18 31 41 / 51%)";
@@ -406,6 +424,12 @@ function darkMode(){
         btn9.onmouseleave = function(){
             btn9.style.backgroundColor = "#fff";
         }
+        btn10.onmouseover = function(){
+            btn10.style.backgroundColor = "#f5f5f5";
+        }
+        btn10.onmouseleave = function(){
+            btn10.style.backgroundColor = "#fff";
+        }
 
         btn1.style.color = "#000";
         btn2.style.color = "#000";
@@ -416,5 +440,6 @@ function darkMode(){
         btn7.style.color = "#000";
         btn8.style.color = "#000";
         btn9.style.color = "red";
+        btn10.style.color = "#000";
     }
 }
