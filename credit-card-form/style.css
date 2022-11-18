@@ -265,7 +265,7 @@ button:hover{
 .front-content{
     display: flex;
     margin: 0 0 0 25px;
-    padding-top: 25%;
+    padding-top: 23%;
     width: 100px;
 }
 .color-picker{
@@ -317,8 +317,8 @@ button:hover{
 }
 
 .front-text{
-    margin-top: 65px;
-    margin-bottom: 6%;
+    margin-top: auto;
+    margin-bottom: 5%;
     margin-left: 20px;
     display: flex;
     font-size: 16px;
